@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-colors-flat.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2f67458a51.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>ٍsameh</title>
+  </head>
+  <body>
+    <header class="mb-3 header" id="top">
+      <div class="w3-top" style="position: relative">
+        <div class="w3-bar w3-black w3-card">
+          <a href="../index.html" class="w3-bar-item w3-button w3-padding-large"
+            ><img
+              style="width: 73px"
+              src="../imgs/Capture-removebg-preview.png"
+              alt=""
+          /></a>
+          <a class="icon w3-bar-item w3-button w3-padding-large"
+          ><iconify-icon
+            inline
+            icon="material-symbols:shopping-cart-outline"
+            style="color: white"
+            width="24"
+            height="24"
+          ></iconify-icon>
+          <span
+            class="badge w3-right"
+            style="font-size: small; background: red; color: white"
+          ></span>
+        </a>
+        <a
+          href="Favourite.html"
+          class="w3-bar-item w3-button w3-padding-large"
+          >Favourites <i class="fa-solid fa-star"></i
+        ></a>
+          <span class="Links w3-right">
+            <a
+              href="../sections/login.html"
+              class="w3-bar-item w3-button w3-padding-large"
+              >Login</a
+            >
+            <a
+              href="../sections/signup.html"
+              class="w3-bar-item w3-button w3-padding-large"
+              >signUp</a
+            >
+          </span>
+          <span class="user_info w3-right">
+
+            <div class="cart-products">
+              <div></div>
+              <a href="shopping-cart.html">View All Products</a>
+            </div>
+            <a
+              href="profile.html"
+              class="user w3-bar-item w3-button w3-padding-large w"
+            ></a>
+            <a class="Log w3-bar-item w3-button w3-padding-large">logout</a>
+          </span>
+        </div>
+      </div>
+
+      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+        style="margin-top: 46px"
+      >
+        <a
+          href="../index.html"
+          class="w3-bar-item w3-button w3-padding-large"
+          onclick="myFunction()"
+          >Home</a
+        >
+        <a
+          href="../index.html#gallery"
+          class="w3-bar-item w3-button w3-padding-large"
+          onclick="myFunction()"
+          >Gallery</a
+        >
+        <a
+          href="../index.html#new-arrivals"
+          class="w3-bar-item w3-button w3-padding-large"
+          onclick="myFunction()"
+          >New Arrivals</a
+        >
+        <a
+          href="../index.html#testimony"
+          class="w3-bar-item w3-button w3-padding-large"
+          onclick="myFunction()"
+          >Testimony</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button w3-padding-large"
+          onclick="myFunction()"
+          >Contact</a
+        >
+      </div>
+    </header>
+    <div class="container">
+      <h2 class="section-text-header">Favourite</h2>
+    </div>
+    <div class="container tab-content" id="v-pills-tabContent">
+      <div class="favouriteNOProducts" id="new-arrivalsNo"></div>
+      <div
+        class="favourite-products d-flex justify-content-around align-items-center flex-wrap"
+        id="new-arrivals"
+      ></div>
+    </div>
+    <div class="w3-light-gray" style="margin-top: 40px; padding: 50px 0px">
+      <div class="w3-center contact" id="contact">
+        <div class="w3-left-align w3-margin-top contact-info">
+          <h3 style="font-weight: 800" class="contact-head">GET IN TOUCH</h3>
+          <h4 style="font-weight: 600">Your styles at low cost</h4>
+          <p>
+            We care about our customers<br />you can contact us for any feedback
+          </p>
+          <h4 style="font-weight: 600">Follow Us</h4>
+
+          <i class="fa fa-facebook-official w3-hover-opacity icons"></i>
+          <i class="fa fa-instagram w3-hover-opacity icons"></i>
+          <i class="fa fa-snapchat w3-hover-opacity icons"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity icons"></i>
+          <i class="fa fa-twitter w3-hover-opacity icons"></i>
+          <i class="fa fa-linkedin w3-hover-opacity icons"></i>
+        </div>
+        <div class="w3-left-align w3-margin-top contact-info">
+          <h3 style="font-weight: 600">OPENING HOURS</h3>
+          <p>Mon - Sat 7am - 9pm:</p>
+          <p>Opening on Morning | Off at afternoon</p>
+          <p>Delivery only on opening hours</p>
+          <br />
+          <div class="w3-margin-to w3-left-align">
+            <h4 style="font-weight: 600">CONTACT INFO</h4>
+            <p>
+              <i
+                class="fa fa-phone"
+                style="margin-right: 8px; font-size: 20px"
+              ></i>
+              (+20) 010-336-5784
+            </p>
+            <p>
+              <i
+                class="fa fa-phone"
+                style="margin-right: 8px; font-size: 20px"
+              ></i
+              >(+20) 010-336-5784
+            </p>
+            <label
+              ><i
+                class="fa fa-envelope"
+                style="margin-right: 5px; font-size: 20px"
+              ></i
+            ></label>
+            <input placeholder="Email" class="w3-margin-top" type="email" />
+            <br />
+            <br />
+            <button class="w3-button w3-red w3-round" style="margin-left: 30px">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-flat-midnight-blue w3-padding w3 w3-center">
+      <p>Made By Ahmed Sameh ♥ 2022</p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="../js/user.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/Fav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sameh - Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-colors-flat.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="" />
+    <style>
+      body {
+        background-image: url(../imgs/back.jpg);
+        background-size: cover;
+      }
+      form {
+        background-color: rgba(255, 255, 255, 0.8);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px;
+        border-radius: 10px;
+        animation: slide-in 0.5s ease-in-out;
+      }
+      @keyframes slide-in {
+        from {
+          transform: translateY(-50%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header" id="top">
+      <div class="w3-top" style="position: relative">
+        <div class="w3-bar w3-black w3-card header">
+          <a
+            class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+            href="javascript:void(0)"
+            onclick="myFunction()"
+            title="Toggle Navigation Menu"
+            ><i class="fa fa-bars"></i
+          ></a>
+          <a href="../index.html" class="w3-bar-item w3-button w3-padding-large"
+            ><img
+              style="width: 73px"
+              src="../imgs/Capture-removebg-preview.png"
+              alt=""
+          /></a>
+          <span class="w3-right">
+            <a
+              href="login.html"
+              class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+              >Login</a
+            >
+            <a
+              href="signup.html"
+              class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+              >signUp</a
+            >
+          </span>
+        </div>
+      </div>
+      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    </header>
+    <div class="bg-image"></div>
+    <div class="container h-100 d-flex align-items-center">
+      <div class="mx-auto mt-5">
+        <h1 class="text-center text-primary mt-lg-5">
+          Sameh E-commerce Website
+        </h1>
+        <form id="login-form" method="post" class="form-group mt-lg-5">
+          <h2 class="text-center text-primary">Login</h2>
+          <label for="useremail" class="col-form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter your email"
+            id="useremailLogin"
+            name="useremail"
+          />
+          <p class="pls"></p>
+          <label for="password" class="col-form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Enter your password"
+            id="passwordLogin"
+            name="password"
+          />
+          <p class="pls1"></p>
+          <button type="submit" id="btn" class="btn btn-primary btn-block mt-3">
+            Login
+          </button>
+        </form>
+        <div class="text-center error-msg" id="error-msg"></div>
+        <p class="text-center text-white">
+          Don't have an account?
+          <a href="../sections/signup.html">Register here</a>
+        </p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
